@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<redisConfig>
+	<!-- redis参数     host, port, password -->
+	<!-- xxx.正式服     xxx.xx.xxx.xx   6379   ERedisxxxxxxxx 保密不允许操作-->
+	<!-- 101.测试服     114.55.127.91   6380   ERedis1701Test -->
+	<!-- 116.测试服     114.55.127.91   6379   ERedis1701Test -->
+	<!-- 127.本地服     192.168.1.232   6388   dkkaI#27KlmQ-3k2OPj -->
+	
+	<!-- redis地址 -->
+<!-- 	<redisHost>192.168.1.232</redisHost> -->
+	<redisHost>192.168.1.232</redisHost>
+	<!-- redis端口 -->
+	<redisPort>6379</redisPort>
+	<!-- redis密码 -->
+	<redisPassword>dkkaI#27KlmQ-3k2OPj</redisPassword>
+	<!-- redis超时-毫秒 -->
+	<redisTimeOut>3000</redisTimeOut>
+	
+	<!-- redis控制pool分配Jedis实例，-1不做限制(最大连接数) -->
+	<redisMaxActive>1024</redisMaxActive>
+	<!-- redis最大空闲连接数 -->
+	<redisMaxIdle>200</redisMaxIdle>
+	<!-- redis最小空闲连接数(初始化连接数) -->
+	<redisMinIdle>10</redisMinIdle>
+	<!-- redis获取Jedis最大等待时间-毫秒 -->
+	<redisMaxWait>3000</redisMaxWait>
+	<!-- redis获取连接检查有效性 -->
+	<redisTestOnBorrow>true</redisTestOnBorrow>
+	<!-- redis释放连接检查有效性-->
+	<redisTestOnReturn>true</redisTestOnReturn>
+</redisConfig>
